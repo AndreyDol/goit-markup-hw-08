@@ -1,0 +1,30 @@
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+  margin-left: 32px;
+  margin-left: 32px;
+  margin-top: 16px;
+&__link {
+  color: var(--icon-notactiv-color);
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-bg-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: color var(--main-time-duration) var(--main-timing-function),
+    background-color var(--main-time-duration) var(--main-timing-function);
+}
+&__link:hover,
+&__link:focus {
+  background-color: var(--logo-bg-color);
+  color: var(--main-bg-color);
+}
+}
+
+

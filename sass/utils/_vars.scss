@@ -1,0 +1,20 @@
+:root {
+  /*Шрифти*/
+  --main-font: "Roboto", sans-serif;
+  --main-font-size: 14px;
+  --main-line-height: 1.14;
+  --main-letter-spacing: 0.03em;
+  /*кольори*/
+  --main-title-color: #212121;
+  --main-bg-color: #ffffff;
+  --main-font-color: #757575;
+  --second-bg-color: #2f303a;
+  --team-bg-color: #f5f4fa;
+  --logo-bg-color: #2196f3;
+  --btn-active: #188ce8;
+  --logo-span: #000000;
+  --icon-notactiv-color: #afb1b8;
+  /*--------------час--------*/
+  --main-time-duration: 250ms;
+  --main-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,31 @@
+@import"./utils/vars";
+@import"./utils/hidden";
+@import"./base/reset";
+
+@import"./components/container";
+@import"./components/section";
+@import"./components/social";
+@import"./layouts/header";
+@import"./components/btn";
+/*section Ефективні рішення для вашого бізнесу*/
+@import"./layouts/solution";
+
+/*section Переваги Вебстудіо*/
+
+@import"./layouts/benefits";
+/*---------section Чим ми займаємося------------*/
+@import"./layouts/work";
+@import"./components/title";
+/*---------section Наша команда------------*/
+@import"./layouts/team";
+/*------------------ Постійні клієнти---------------------- */
+@import"./layouts/clients";
+
+/*-------------------------Footer---------------------------*/
+@import"./layouts/footer";
+
+/*проєкти і фільтри------------------*/
+@import"./layouts/portfolio";
+
+/* --------------модальне вікно---------------- */
+@import"./layouts/modal";
