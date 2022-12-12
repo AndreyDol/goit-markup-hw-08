@@ -1,0 +1,103 @@
+.menu{    
+&__open{
+    margin-left: auto;
+  outline: transparent;
+    background-color: transparent;
+    border: none; 
+color: var(--main-title-color);
+    transition: color var(--main-time-duration) var(--main-timing-function);
+    @include tablet{
+        display: none;
+    }
+}
+ &__close{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+  outline: transparent;
+    background-color: transparent;
+    border: none; 
+color: var(--main-title-color);
+    transition: color var(--main-time-duration) var(--main-timing-function);
+   
+}
+&__open:hover, &__open:focus, &__close:hover, &__close:focus {color:var(--logo-bg-color);}
+&__icon--open, &__icon--close{
+    fill:currentColor;
+}   
+
+&__window {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px ;
+  }
+
+  &__wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //overflow: auto;
+  
+}
+}
+.menu-nav
+{display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+&__item{
+font-family: 'Roboto',sans-serif;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 0.02em;
+color: #212121;
+transition: color var(--main-time-duration) var(--main-timing-function);
+}
+
+&__item:focus{
+color:var(--logo-bg-color);
+}
+}
+
+.menu-contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+&__tel{
+  font-family: 'Roboto',sans-serif;
+font-weight: 500;
+font-size: 34px;
+line-height: 1.18;
+letter-spacing: 0.02em;
+color: var(--logo-bg-color);
+}
+
+&__email{
+font-family: 'Roboto',sans-serif;
+font-weight: 500;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: var(--main-font-color);
+transition: color var(--main-time-duration) var(--main-timing-function);
+}
+
+&__tel:focus, &__email:focus{
+color:var(--logo-bg-color);
+transition: color var(--main-time-duration) var(--main-timing-function);
+}
+&__mob-social{
+  margin-top: 32px;
+}
+}
+

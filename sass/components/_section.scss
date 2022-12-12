@@ -1,7 +1,28 @@
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+// .link {
+//   text-decoration: none;
+//   font-style: normal;
+// }
+// .list {
+//   list-style: none;
+// }
+
+//=============================================
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;       
+  @include tablet {
+    padding-top: 60px;
+  padding-bottom: 60px;  
+  }
+  @include desktop {
+     padding-top: 94px;
+  padding-bottom: 94px;  
+}}
 
 .link {
   text-decoration: none;
@@ -10,3 +31,4 @@
 .list {
   list-style: none;
 }
+

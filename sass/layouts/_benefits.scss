@@ -1,10 +1,20 @@
 .benefits{
 &__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 &__item {
-  width: calc((100% - 90px) / 4);
+ 
+    @include calc(1, 30px);
+ 
+  @include tablet {
+    @include calc(2, 30px);
+  }
+  @include desktop {
+    @include calc(4, 30px);
+  } 
+
   display: block;
   max-width: 100%;
   height: auto;
@@ -27,6 +37,14 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-title-color);
+  text-align: center;
+@include tablet {
+   text-align: left;
+  }
+  @include desktop {
+    text-align: left;
+  } 
+
 }
 &-paragraph {
   line-height: 1.71;

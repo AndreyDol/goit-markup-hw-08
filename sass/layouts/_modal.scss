@@ -11,8 +11,21 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 94%;
+  min-height: 609px;
+padding-right: 40px;
+padding-left: 40px;
+ max-height: 100%; 
+
+  @include mobile{
+       width:450px;
+  min-height: 609px;
+ 
+  }
+  @include desktop{
+   width: 528px;
+  min-height: 581px; 
+  }
   top: 50%;
   left: 50%;
   background-color: var(--main-bg-color);
@@ -46,15 +59,19 @@
 }
 &__title {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  @include desktop{
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
 }
 &__field {
   margin-bottom: 10px;
@@ -65,7 +82,7 @@
 }
 
 &__form {
-  width: 85%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -121,9 +138,6 @@
   opacity: 0;
 }
 
-
-
-
 .modal__input:hover,
 .label-checkbox:hover {
   cursor: pointer;
@@ -143,7 +157,6 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-font-color);
-
 }
 
 .modal__input:focus + .modal__input-icon {
@@ -176,19 +189,31 @@
   width: 200px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 40px;
 }
 
 .label-checkbox {
   display: flex;
   align-items: center;
   margin-left: 13px;
-  margin-top: 25px;
-  margin-bottom: 35px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 10px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
+@include mobile{
+  font-size: 12px;
+  line-height: 1.17;
+ 
+}
+
+@include desktop{
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 }
 .label-checkbox--sub {
   margin-left: 5px;
